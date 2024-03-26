@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tajmahal"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/imageView"
+                    app:layout_constraintBottom_toTopOf="@id/buttonBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                <!-- Add your information text views here -->
+                                <!-- Example: -->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=" The Taj Mahal, an architectural wonder and a symbol of eternal love, stands as one of the most renowned and cherished monuments in the world. Located in the city of Agra, Uttar Pradesh, India, this majestic structure captivates millions of visitors from around the globe with its exquisite beauty, historical significance, and romantic aura. In this comprehensive essay, we will delve deep into the history, architecture, symbolism, cultural significance, conservation efforts, controversies, and enduring legacy of the Taj Mahal. The Taj Mahal, meaning Crown of the Palace, is an iconic mausoleum that epitomizes the grandeur and splendor of Mughal architecture. Commissioned by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, the monument is a testament to the enduring power of love and the pursuit of perfection. Its ethereal beauty and timeless appeal have earned it a revered place in the hearts of people worldwide.The history of the Taj Mahal dates back to the 17th century, during the reign of the Mughal Emperor Shah Jahan. Born in 1592, Shah Jahan ascended the throne in 1628, following the death of his father, Emperor Jahangir. He was deeply in love with Mumtaz Mahal, a Persian princess whom he married in 1612. Mumtaz Mahal was not only his beloved wife but also his trusted confidante and advisor. Together, they shared a profound bond that transcended the boundaries of time and space. Tragically, Mumtaz Mahal passed away on June 17, 1631, while giving birth to their 14th child. Devastated by her death, Shah Jahan was plunged into deep grief and vowed to immortalize her memory through the construction of a magnificent mausoleum. Thus, the idea for the Taj Mahal was born—a monument of unparalleled beauty that would serve as a timeless tribute to his beloved queen. The construction of the Taj Mahal commenced in 1632, under the supervision of an eminent team of architects, artisans, and craftsmen. The site chosen for the monument was located on the southern bank of the Yamuna River in Agra, overlooking a picturesque landscape. The architectural design of the Taj Mahal is attributed to Ustad Ahmad Lahauri, a renowned architect of Persian descent. The construction of the Taj Mahal involved the labor of thousands of skilled workers, including architects, masons, carvers, and calligraphers. The main structure of the monument is built entirely of white marble, which was sourced from quarries in Rajasthan, India, and transported to Agra using a network of rivers and canals. The construction of the Taj Mahal was a monumental undertaking that spanned over two decades, with the main mausoleum completed in 1643. The surrounding gardens, water features, and other architectural elements were added in subsequent years, culminating in the final completion of the monument in 1653. The architectural style of the Taj Mahal is a fusion of Persian, Islamic, Turkish, and Indian influences, reflecting the cosmopolitan ethos of the Mughal Empire. The monument is renowned for its perfect symmetry, intricate ornamentation, and exquisite craftsmanship. The central feature of the Taj Mahal is its main mausoleum, which is topped by a large, onion-shaped dome. The dome is flanked by four smaller domed pavilions, known as chattris, which are placed at each corner of the platform. The entire structure is surrounded by a symmetrical garden, divided into four quadrants by reflecting pools and pathways. The facade of the Taj Mahal is adorned with intricate carvings, geometric patterns, and inscriptions from the Quran, executed in delicate inlay work known as pietra dura. The interior of the mausoleum is equally breathtaking, with ornate marble screens, floral motifs, and precious gemstones adorning the walls and ceilings. The Taj Mahal is imbued with rich symbolism and deep significance, representing love, beauty, and the eternal bond between Shah Jahan and Mumtaz Mahal. It is often regarded as a symbol of paradise on earth, reflecting the Mughal belief in the afterlife and the promise of eternal bliss. The Taj Mahal also serves as a testament to the wealth, power, and cultural patronage of the Mughal Empire during the 17th century. It was built at a staggering cost, both in terms of resources and human labor, yet its enduring legacy continues to inspire awe and admiration to this day. The Taj Mahal's influence extends far beyond its physical presence, permeating various aspects of culture, literature, art, and popular imagination. It has inspired countless poets, writers, artists, and filmmakers, who have depicted its beauty and symbolism in their works. In addition, the Taj Mahal holds immense cultural and religious significance for people of diverse backgrounds, serving as a symbol of India's rich cultural heritage and as a sacred pilgrimage site for millions of visitors each year. Over the years, the Taj Mahal has faced various threats, including air pollution, acid rain, and deterioration due to aging. To address these challenges, the Indian government, in collaboration with international organizations, has undertaken extensive conservation efforts to preserve the monument for future generations. These efforts include measures such as restricting vehicular traffic around the monument, controlling industrial pollution, and periodic cleaning and restoration work to safeguard its integrity. Despite these challenges, the Taj Mahal continues to stand as a shining beacon of architectural excellence and cultural heritage. Despite its iconic status, the Taj Mahal has been the subject of controversy and debate. Some historians and scholars have questioned the official narrative surrounding its construction, suggesting alternative theories and interpretations. Additionally, debates over its ownership and claims by various groups and individuals have occasionally sparked controversies. Nevertheless, the Taj Mahal's status as a UNESCO World Heritage Site and its universal appeal remain undisputed, ensuring its preservation and protection for generations to come. In conclusion, the Taj Mahal stands as a timeless testament to love, beauty, and architectural excellence. Its sublime beauty and historical significance continue to captivate people from all walks of life"
+                                    android:padding="16dp"/>
+                                <!-- Add more text views as needed -->
+                        </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/buttonBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="16dp">
+
+                        <Button
+                            android:id="@+id/backButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Back"
+                            android:onClick="openMain2"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/nextButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Next"
+                            android:onClick="openWebsite"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"/>
+
+                </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
